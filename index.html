@@ -41,9 +41,16 @@
       gap: 16px;
       margin-bottom: 28px;
     }
+    .brand {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
     .brand-line {
       display: flex;
       align-items: baseline;
+      justify-content: center;
       gap: 10px;
       flex-wrap: wrap;
     }
@@ -132,13 +139,14 @@
     @media (max-width: 560px) {
       .top { flex-direction: column-reverse; align-items: flex-start; }
       .gh-mark { align-self: flex-end; }
+      .brand { align-self: center; width: 100%; }
     }
   </style>
 </head>
 <body>
   <main>
     <div class="top">
-      <div>
+      <div class="brand">
         <div class="brand-line">
           <h1>Ayla</h1>
           <p class="kicker">IA-Squad</p>
@@ -150,7 +158,7 @@
         <span>Funciona com GitHub</span>
       </a>
     </div>
-    <p>Ayla é a porta operacional da IA-Squad. Ela cria um ambiente colaborativo entre IAs e ferramentas diversas, usando os repositórios do GitHub como ponto comum de trabalho.</p>
+    <p>Ayla é a porta operacional da IA-Squad. Ela cria um ambiente colaborativo entre IAs e ferramentas diversas, incluindo Grok e ChatGPT, usando a API e os repositórios do GitHub como ponto comum de trabalho.</p>
     <p>O objetivo é simples: desenvolver com menos ruído. Em vez de cada agente ou ferramenta seguir um caminho isolado, Ayla organiza o contexto no GitHub colaborando para:</p>
     <ul>
       <li>Reduzir trabalho duplicado.</li>
@@ -171,7 +179,7 @@
     <footer>
       Contato: <a href="https://github.com/Charlie030183">github.com/Charlie030183</a><br>
       Distribuição pública: <a href="https://github.com/Charlie030183/IA-Squad-Distribution">IA-Squad-Distribution</a>
-      <p class="legal">GitHub e o logo Invertocat são marcas da GitHub, Inc. Ayla não é um produto do GitHub e não é endossada por ele.</p>
+      <p class="legal">GitHub e o logo Invertocat são marcas da GitHub, Inc. Grok e ChatGPT são marcas de seus respectivos titulares. Ayla não é um produto do GitHub, da xAI ou da OpenAI e não é endossada por eles.</p>
     </footer>
   </main>
 </body>
