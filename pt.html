@@ -173,27 +173,31 @@
         <span>Funciona com GitHub</span>
       </a>
     </div>
-    <p>Ayla é a assistente operacional para suas IAs, ela cria um ambiente colaborativo entre elas e ferramentas diversas, incluindo Grok e ChatGPT, usando a API e os repositórios do GitHub como ponto comum de trabalho.</p>
-    <p>O objetivo é simples: desenvolver com menos ruído. Em vez de cada agente ou ferramenta seguir um caminho isolado, Ayla organiza o contexto no GitHub colaborando para:</p>
+    <p>Ayla é a assistente operacional da IA-Squad. Ela coordena IAs e ferramentas, incluindo Grok, ChatGPT, VS Code e Cline, usando a API e os repositórios do GitHub como fonte comum de contexto, trabalho e continuidade.</p>
+    <p>Seu objetivo é tornar o desenvolvimento mais organizado, seguro e eficiente. Em vez de cada agente trabalhar isoladamente, Ayla mantém missões, decisões, estados e evidências compartilhados para:</p>
     <ul>
       <li>Minimizar falhas de comunicação entre IAs e ferramentas.</li>
-      <li>Reduzir trabalho duplicado.</li>
-      <li>Evitar erros de versão e de contexto.</li>
-      <li>Detectar erros operacionais no próprio ambiente e corrigir-se de forma autônoma, reduzindo o trabalho do usuário e alertando o humano só em casos de risco.</li>
-      <li>Inibir outros desvios comuns durante o desenvolvimento das aplicações.</li>
-      <li>Capaz de trabalhar em seu projeto no GitHub tanto a partir do Windows quanto do Linux.</li>
+      <li>Evitar trabalho duplicado e impedir duas pontes locais na mesma tarefa.</li>
+      <li>Reduzir erros de versão, contexto desatualizado e referências incorretas.</li>
+      <li>Detectar falhas conhecidas, aplicar somente correções seguras e interromper o processo diante de risco ou resultado não comprovado.</li>
+      <li>Controlar tentativas e tempo de execução para evitar tarefas presas em loops.</li>
+      <li>Validar resultados com testes, registros de integridade e evidências antes de declarar sucesso.</li>
+      <li>Trabalhar com projetos no GitHub a partir de ambientes Windows e Linux.</li>
     </ul>
-    <p>Isso também ajuda em projetos pequenos, como criação de jogos e aplicativos multiplataforma.</p>
+    <p>Essas capacidades apoiam projetos de diferentes tamanhos, incluindo jogos, aplicativos e ferramentas multiplataforma.</p>
     <h2>Como ela conversa com as ferramentas</h2>
-    <p>Ayla não trabalha sozinha. Ela articula IAs e o ambiente local do desenvolvedor.</p>
+    <p>Ayla articula serviços de IA, o GitHub e o ambiente local do desenvolvedor por missões estruturadas e auditáveis.</p>
     <ul>
-      <li><strong>VS Code + Cline</strong> — para edição assistida no projeto. Parte dessa ponte ainda usa um handoff simples (copiar e colar o pedido estruturado).</li>
-      <li><strong>Terminal local</strong> — tarefas no computador podem ser disparadas automaticamente via ChatGPT, sem o desenvolvedor ter de repetir o comando à mão.</li>
-      <li><strong>GitHub</strong> — é o lugar onde o trabalho fica registrado, para todas as IAs verem o mesmo estado.</li>
+      <li><strong>Grok e ChatGPT</strong> — compartilham planos, tarefas, evidências e handoffs pelo mesmo registro no GitHub, permitindo que um continue o trabalho do outro.</li>
+      <li><strong>VS Code + Cline</strong> — realizam edição assistida por uma fila controlada; a automação completa dessa ponte continua em desenvolvimento.</li>
+      <li><strong>Execução local</strong> — tarefas determinísticas podem ser enviadas ao computador por uma ponte autorizada, com scripts aprovados, limites de tempo e retorno do resultado ao GitHub.</li>
+      <li><strong>GitHub</strong> — é a fonte oficial de código, estado, histórico, evidências e colaboração da IA-Squad.</li>
     </ul>
+    <h2>Aprendizado governado</h2>
+    <p>Ayla já registra resultados reais, qualidade, correções e evidências. Experiências repetidas podem formar candidatos a lições reutilizáveis, mas nenhuma lição altera automaticamente código, políticas ou conhecimento validado. Mudanças sensíveis continuam exigindo testes, confiança suficiente e revisão.</p>
     <h2>Backup e restauração</h2>
-    <p>Antes de apagar um repositório ou material autorizado para exclusão, Ayla cria um backup verificado no GitHub. Esse backup fica em quarentena por 7 dias. Se for pedido, ela é capaz de restaurar o que foi preservado. Se o backup falhar, a exclusão não segue.</p>
-    <p>Projeto pessoal de pesquisa e desenvolvimento, dirigido por Charlie_030183. O código interno permanece privado. Este site descreve apenas a ideia pública.</p>
+    <p>Antes de uma exclusão autorizada, Ayla exige backup verificado, teste de integridade e quarentena por 7 dias. Se qualquer verificação falhar, a exclusão é bloqueada. A restauração completa permanece no programa de testes e melhorias contínuas.</p>
+    <p>Projeto pessoal de pesquisa e desenvolvimento, criado e dirigido por Charlie_030183. O código interno permanece privado. Este site apresenta apenas a ideia pública e suas capacidades verificadas.</p>
     <footer>
       <div class="footer-top">
         <div>
