@@ -39,7 +39,7 @@
     }
     .hero {
       position: relative;
-      min-height: 58px;
+      min-height: 72px;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -67,31 +67,33 @@
     }
     .brand-line {
       display: flex;
-      align-items: baseline;
+      align-items: flex-end;
       justify-content: center;
-      gap: 10px;
+      gap: 12px;
       flex-wrap: wrap;
     }
     h1 {
       margin: 0;
-      font-size: clamp(2.2rem, 5vw, 3.1rem);
-      line-height: 1;
+      color: #f3eee6;
+      font-size: clamp(2.6rem, 6vw, 3.6rem);
+      line-height: 0.88;
       letter-spacing: -0.03em;
+      font-weight: 700;
     }
     p.kicker {
-      margin: 0;
+      margin: 0 0 0.46em;
       color: var(--accent);
-      font-size: 12px;
-      font-weight: 600;
+      font-size: clamp(0.92rem, 2.1vw, 1.12rem);
+      font-weight: 650;
       letter-spacing: .08em;
       text-transform: uppercase;
     }
     p.meaning {
-      margin: 8px 0 28px;
+      margin: 16px 0 28px;
       text-align: center;
-      color: var(--muted);
-      font-size: 13px;
-      letter-spacing: .03em;
+      color: #c9d1d9;
+      font-size: 14px;
+      letter-spacing: .08em;
       line-height: 1.4;
     }
     h2 {
