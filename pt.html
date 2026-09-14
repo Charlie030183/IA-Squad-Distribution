@@ -35,7 +35,7 @@
       background: var(--card);
       border: 1px solid var(--line);
       border-radius: 16px;
-      padding: 28px 32px 48px;
+      padding: 28px 32px 40px;
     }
     .hero {
       position: relative;
@@ -45,13 +45,17 @@
       justify-content: center;
       margin-bottom: 24px;
     }
+    .footer-top {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+    }
     .lang-switch {
-      position: absolute;
-      right: 16px;
-      bottom: 14px;
       display: flex;
       width: 22px;
       height: 16px;
+      flex-shrink: 0;
       text-decoration: none;
       opacity: .92;
     }
@@ -123,7 +127,6 @@
     footer {
       margin-top: 8px;
       padding-top: 20px;
-      padding-right: 36px;
       border-top: 1px solid var(--line);
       color: var(--muted);
       font-size: 14px;
@@ -169,13 +172,17 @@
     <p>Antes de apagar um repositório ou material autorizado para exclusão, Ayla cria um backup verificado no GitHub. Esse backup fica em quarentena por 7 dias. Se for pedido, ela é capaz de restaurar o que foi preservado. Se o backup falhar, a exclusão não segue.</p>
     <p>Projeto pessoal de pesquisa e desenvolvimento, dirigido por Charlie_030183. O código interno permanece privado. Este site descreve apenas a ideia pública.</p>
     <footer>
-      Contato: <a href="https://github.com/Charlie030183">github.com/Charlie030183</a><br>
-      Distribuição pública: <a href="https://github.com/Charlie030183/IA-Squad-Distribution">IA-Squad-Distribution</a>
+      <div class="footer-top">
+        <div>
+          Contato: <a href="https://github.com/Charlie030183">github.com/Charlie030183</a><br>
+          Distribuição pública: <a href="https://github.com/Charlie030183/IA-Squad-Distribution">IA-Squad-Distribution</a>
+        </div>
+        <a class="lang-switch" href="index.html" title="English" aria-label="Mudar para inglês">
+          <img src="assets/flag-us.svg" alt="English">
+        </a>
+      </div>
       <p class="legal">GitHub e o logo Invertocat são marcas da GitHub, Inc. Grok e ChatGPT são marcas de seus respectivos titulares. Ayla não é um produto do GitHub, da xAI ou da OpenAI e não é endossada por eles.</p>
     </footer>
-    <a class="lang-switch" href="index.html" title="English" aria-label="Mudar para inglês">
-      <img src="assets/flag-us.svg" alt="English">
-    </a>
   </main>
 </body>
 </html>
