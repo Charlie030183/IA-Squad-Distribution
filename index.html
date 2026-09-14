@@ -46,6 +46,10 @@
       font-size: clamp(2rem, 5vw, 3rem);
       line-height: 1.1;
     }
+    h2 {
+      margin: 24px 0 10px;
+      font-size: 1.1rem;
+    }
     p {
       margin: 0 0 16px;
       color: var(--muted);
@@ -83,6 +87,13 @@
       <li>erros de versão e de contexto</li>
       <li>falhas de comunicação entre IAs e ferramentas</li>
       <li>outros desvios comuns durante o desenvolvimento</li>
+    </ul>
+    <h2>Como ela conversa com as ferramentas</h2>
+    <p>Ayla não trabalha sozinha. Ela articula IAs e o ambiente local do desenvolvedor.</p>
+    <ul>
+      <li><strong>VS Code + Cline</strong> — para edição assistida no projeto. Parte dessa ponte ainda usa um handoff simples (copiar e colar o pedido estruturado).</li>
+      <li><strong>Terminal local</strong> — tarefas no computador podem ser disparadas automaticamente via ChatGPT, sem o desenvolvedor ter de repetir o comando à mão.</li>
+      <li><strong>GitHub</strong> — é o lugar onde o trabalho fica registrado, para todas as IAs verem o mesmo estado.</li>
     </ul>
     <p>Projeto pessoal de pesquisa e desenvolvimento, dirigido por Charlie_030183. O código interno permanece privado. Este site descreve apenas a ideia pública.</p>
     <footer>
