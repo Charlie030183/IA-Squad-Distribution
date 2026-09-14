@@ -39,10 +39,11 @@
     }
     .hero {
       position: relative;
-      min-height: 72px;
+      min-height: 88px;
       display: flex;
       align-items: center;
       justify-content: center;
+      margin-bottom: 28px;
     }
     .lang-switch {
       position: absolute;
@@ -62,39 +63,10 @@
       border-radius: 2px;
     }
     .lang-switch:hover { opacity: 1; text-decoration: none; }
-    .brand {
-      text-align: center;
-    }
-    .brand-line {
-      display: flex;
-      align-items: flex-end;
-      justify-content: center;
-      gap: 12px;
-      flex-wrap: wrap;
-    }
-    h1 {
-      margin: 0;
-      color: #f3eee6;
-      font-size: clamp(2.6rem, 6vw, 3.6rem);
-      line-height: 0.88;
-      letter-spacing: -0.03em;
-      font-weight: 700;
-    }
-    p.kicker {
-      margin: 0 0 0.46em;
-      color: var(--accent);
-      font-size: clamp(0.92rem, 2.1vw, 1.12rem);
-      font-weight: 650;
-      letter-spacing: .08em;
-      text-transform: uppercase;
-    }
-    p.meaning {
-      margin: 16px 0 28px;
-      text-align: center;
-      color: #c9d1d9;
-      font-size: 14px;
-      letter-spacing: .08em;
-      line-height: 1.4;
+    .lockup {
+      display: block;
+      width: min(400px, 72%);
+      height: auto;
     }
     h2 {
       margin: 24px 0 10px;
@@ -170,18 +142,12 @@
       <a class="lang-switch" href="index.html" title="English" aria-label="Mudar para inglês">
         <img src="assets/flag-us.svg" alt="English">
       </a>
-      <div class="brand">
-        <div class="brand-line">
-          <h1>Ayla</h1>
-          <p class="kicker">IA-Squad</p>
-        </div>
-      </div>
+      <img class="lockup" src="assets/ayla-lockup.png" width="324" height="105" alt="Ayla IA-Squad — Autonomous Yielding Learning Assistant">
       <a class="gh-mark" href="https://github.com/Charlie030183" aria-label="Funciona com GitHub">
         <img src="assets/github-invertocat-white.svg" alt="GitHub" width="28" height="27">
         <span>Funciona com GitHub</span>
       </a>
     </div>
-    <p class="meaning">Autonomous Yielding Learning Assistant</p>
     <p>Ayla é a assistente operacional para suas IAs, ela cria um ambiente colaborativo entre elas e ferramentas diversas, incluindo Grok e ChatGPT, usando a API e os repositórios do GitHub como ponto comum de trabalho.</p>
     <p>O objetivo é simples: desenvolver com menos ruído. Em vez de cada agente ou ferramenta seguir um caminho isolado, Ayla organiza o contexto no GitHub colaborando para:</p>
     <ul>
