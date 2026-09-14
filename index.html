@@ -173,27 +173,31 @@
         <span>Works with GitHub</span>
       </a>
     </div>
-    <p>Ayla is the operational assistant for your AIs. She creates a collaborative environment among them and various tools, including Grok and ChatGPT, using the GitHub API and repositories as a common workplace.</p>
-    <p>The goal is simple: develop with less noise. Instead of each agent or tool following an isolated path, Ayla organizes context on GitHub, working to:</p>
+    <p>Ayla is the operational assistant of IA-Squad. She coordinates AIs and tools, including Grok, ChatGPT, VS Code, and Cline, using the GitHub API and repositories as a shared source of context, work, and continuity.</p>
+    <p>Her goal is to make development more organized, secure, and efficient. Instead of letting each agent work in isolation, Ayla maintains shared missions, decisions, states, and evidence to:</p>
     <ul>
       <li>Minimize communication failures between AIs and tools.</li>
-      <li>Reduce duplicate work.</li>
-      <li>Avoid version and context errors.</li>
-      <li>Detect operational errors in her own environment and correct herself autonomously, reducing the user's workload and alerting a human only in cases of risk.</li>
-      <li>Prevent other common pitfalls during application development.</li>
-      <li>Work on your GitHub project from both Windows and Linux.</li>
+      <li>Prevent duplicate work and block two local bridges from handling the same task.</li>
+      <li>Reduce version errors, stale context, and incorrect references.</li>
+      <li>Detect known failures, apply only safe corrections, and stop when risk or an unverified result is found.</li>
+      <li>Limit attempts and execution time to prevent tasks from becoming trapped in loops.</li>
+      <li>Validate results with tests, integrity records, and evidence before declaring success.</li>
+      <li>Work with GitHub projects from Windows and Linux environments.</li>
     </ul>
-    <p>That also helps on small projects, such as building games and cross-platform apps.</p>
+    <p>These capabilities support projects of different sizes, including games, applications, and cross-platform tools.</p>
     <h2>How she talks to tools</h2>
-    <p>Ayla does not work alone. She coordinates AIs and the developer’s local environment.</p>
+    <p>Ayla connects AI services, GitHub, and the developer’s local environment through structured and auditable missions.</p>
     <ul>
-      <li><strong>VS Code + Cline</strong> — for assisted editing in the project. Part of this bridge still uses a simple handoff (copy and paste of the structured request).</li>
-      <li><strong>Local terminal</strong> — tasks on the computer can be triggered automatically via ChatGPT, without the developer having to repeat the command by hand.</li>
-      <li><strong>GitHub</strong> — where the work is recorded, so every AI sees the same state.</li>
+      <li><strong>Grok and ChatGPT</strong> — share plans, tasks, evidence, and handoffs through the same GitHub record, allowing either one to continue the other’s work.</li>
+      <li><strong>VS Code + Cline</strong> — perform assisted editing through a controlled queue; full automation of this bridge remains under development.</li>
+      <li><strong>Local execution</strong> — deterministic tasks can be sent to the computer through one authorized bridge, using approved scripts, time limits, and results returned to GitHub.</li>
+      <li><strong>GitHub</strong> — is IA-Squad’s official source for code, state, history, evidence, and collaboration.</li>
     </ul>
+    <h2>Governed learning</h2>
+    <p>Ayla already records real outcomes, quality, corrections, and evidence. Repeated experiences can become candidates for reusable lessons, but no lesson automatically changes code, policies, or validated knowledge. Sensitive changes still require tests, sufficient confidence, and review.</p>
     <h2>Backup and restore</h2>
-    <p>Before deleting a repository or material authorized for deletion, Ayla creates a verified backup on GitHub. That backup stays in quarantine for 7 days. If requested, she can restore what was preserved. If the backup fails, deletion does not proceed.</p>
-    <p>A personal research and development project, directed by Charlie_030183. Internal code remains private. This site describes only the public idea.</p>
+    <p>Before an authorized deletion, Ayla requires a verified backup, integrity testing, and a 7-day quarantine. If any verification fails, deletion is blocked. Full restoration remains part of the continuous testing and improvement program.</p>
+    <p>A personal research and development project created and directed by Charlie_030183. Internal code remains private. This site presents only the public idea and its verified capabilities.</p>
     <footer>
       <div class="footer-top">
         <div>
