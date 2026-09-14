@@ -28,11 +28,18 @@
       padding: 32px 16px;
     }
     main {
-      width: min(720px, 100%);
+      width: min(760px, 100%);
       background: var(--card);
       border: 1px solid var(--line);
       border-radius: 16px;
       padding: 40px 32px;
+    }
+    .top {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 16px;
+      margin-bottom: 8px;
     }
     p.kicker {
       margin: 0 0 12px;
@@ -67,6 +74,34 @@
       text-decoration: none;
     }
     a:hover { text-decoration: underline; }
+    .gh-mark {
+      flex: 0 0 auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 6px;
+      padding: 8px 10px;
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      background: #0d1117;
+      text-decoration: none;
+      color: var(--muted);
+    }
+    .gh-mark:hover {
+      text-decoration: none;
+      border-color: #8b949e;
+    }
+    .gh-mark img {
+      width: 28px;
+      height: 27px;
+      display: block;
+    }
+    .gh-mark span {
+      font-size: 10px;
+      letter-spacing: .02em;
+      white-space: nowrap;
+      color: var(--muted);
+    }
     footer {
       margin-top: 8px;
       padding-top: 20px;
@@ -74,12 +109,29 @@
       color: var(--muted);
       font-size: 14px;
     }
+    .legal {
+      margin-top: 10px;
+      font-size: 11px;
+      color: #6e7681;
+    }
+    @media (max-width: 560px) {
+      .top { flex-direction: column-reverse; align-items: flex-start; }
+      .gh-mark { align-self: flex-end; }
+    }
   </style>
 </head>
 <body>
   <main>
-    <p class="kicker">IA-Squad</p>
-    <h1>Ayla</h1>
+    <div class="top">
+      <div>
+        <p class="kicker">IA-Squad</p>
+        <h1>Ayla</h1>
+      </div>
+      <a class="gh-mark" href="https://github.com/Charlie030183" aria-label="Funciona com GitHub">
+        <img src="assets/github-invertocat-white.svg" alt="GitHub" width="28" height="27">
+        <span>Funciona com GitHub</span>
+      </a>
+    </div>
     <p>Ayla é a porta operacional da IA-Squad. Ela cria um ambiente colaborativo entre IAs e ferramentas diversas, usando os repositórios do GitHub como ponto comum de trabalho.</p>
     <p>O objetivo é simples: desenvolver com menos ruído. Em vez de cada agente ou ferramenta seguir um caminho isolado, Ayla organiza o contexto no GitHub para reduzir:</p>
     <ul>
@@ -101,6 +153,7 @@
     <footer>
       Contato: <a href="https://github.com/Charlie030183">github.com/Charlie030183</a><br>
       Distribuição pública: <a href="https://github.com/Charlie030183/IA-Squad-Distribution">IA-Squad-Distribution</a>
+      <p class="legal">GitHub e o logo Invertocat são marcas da GitHub, Inc. Ayla não é um produto do GitHub e não é endossada por ele.</p>
     </footer>
   </main>
 </body>
