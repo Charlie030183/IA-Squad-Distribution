@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ayla — IA-Squad</title>
+  <meta name="description" content="Ayla (Autonomous Yielding Learning Assistant) coordena IAs e ferramentas em torno dos repositórios do GitHub.">
+  <link rel="alternate" hreflang="pt-BR" href="pt.html">
+  <link rel="alternate" hreflang="en" href="index.html">
+  <style>
+    :root {
+      color-scheme: dark;
+      --bg: #0d1117;
+      --card: #161b22;
+      --text: #e6edf3;
+      --muted: #8b949e;
+      --line: #30363d;
+      --accent: #3fb950;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      min-height: 100vh;
+      font-family: ui-sans-serif, system-ui, Segoe UI, Helvetica, Arial, sans-serif;
+      background: radial-gradient(circle at top, #1c2333 0%, var(--bg) 45%);
+      color: var(--text);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 32px 16px;
+    }
+    main {
+      position: relative;
+      width: min(760px, 100%);
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: 16px;
+      padding: 40px 32px;
+    }
+    .lang-switch {
+      position: absolute;
+      top: 14px;
+      left: 14px;
+      font-size: 18px;
+      line-height: 1;
+      text-decoration: none;
+      opacity: .82;
+    }
+    .lang-switch:hover { opacity: 1; text-decoration: none; }
+    .top {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 16px;
+      margin-bottom: 28px;
+    }
+    .brand {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      flex: 1;
+    }
+    .brand-line {
+      display: flex;
+      align-items: baseline;
+      justify-content: center;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+    h1 {
+      margin: 0;
+      font-size: clamp(2.2rem, 5vw, 3.1rem);
+      line-height: 1;
+      letter-spacing: -0.03em;
+    }
+    p.kicker {
+      margin: 0;
+      color: var(--accent);
+      font-size: 12px;
+      font-weight: 600;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+    }
+    p.meaning {
+      margin: 10px 0 0;
+      color: var(--muted);
+      font-size: 13px;
+      letter-spacing: .03em;
+      line-height: 1.4;
+    }
+    h2 {
+      margin: 24px 0 10px;
+      font-size: 1.1rem;
+    }
+    p {
+      margin: 0 0 16px;
+      color: var(--muted);
+      line-height: 1.6;
+      font-size: 1.05rem;
+    }
+    ul {
+      margin: 8px 0 24px;
+      padding-left: 20px;
+      color: var(--text);
+      line-height: 1.7;
+    }
+    a {
+      color: #58a6ff;
+      text-decoration: none;
+    }
+    a:hover { text-decoration: underline; }
+    .gh-mark {
+      flex: 0 0 auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 6px;
+      padding: 8px 10px;
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      background: #0d1117;
+      text-decoration: none;
+      color: var(--muted);
+    }
+    .gh-mark:hover {
+      text-decoration: none;
+      border-color: #8b949e;
+    }
+    .gh-mark img {
+      width: 28px;
+      height: 27px;
+      display: block;
+    }
+    .gh-mark span {
+      font-size: 10px;
+      letter-spacing: .02em;
+      white-space: nowrap;
+      color: var(--muted);
+    }
+    footer {
+      margin-top: 8px;
+      padding-top: 20px;
+      border-top: 1px solid var(--line);
+      color: var(--muted);
+      font-size: 14px;
+    }
+    .legal {
+      margin-top: 10px;
+      font-size: 11px;
+      color: #6e7681;
+    }
+    @media (max-width: 560px) {
+      .top { flex-direction: column-reverse; align-items: flex-start; }
+      .gh-mark { align-self: flex-end; }
+      .brand { align-self: center; width: 100%; }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <a class="lang-switch" href="index.html" title="English" aria-label="Mudar para inglês">🇺🇸</a>
+    <div class="top">
+      <div class="brand">
+        <div class="brand-line">
+          <h1>Ayla</h1>
+          <p class="kicker">IA-Squad</p>
+        </div>
+        <p class="meaning">Autonomous Yielding Learning Assistant</p>
+      </div>
+      <a class="gh-mark" href="https://github.com/Charlie030183" aria-label="Funciona com GitHub">
+        <img src="assets/github-invertocat-white.svg" alt="GitHub" width="28" height="27">
+        <span>Funciona com GitHub</span>
+      </a>
+    </div>
+    <p>Ayla é a assistente operacional para suas IAs, ela cria um ambiente colaborativo entre elas e ferramentas diversas, incluindo Grok e ChatGPT, usando a API e os repositórios do GitHub como ponto comum de trabalho.</p>
+    <p>O objetivo é simples: desenvolver com menos ruído. Em vez de cada agente ou ferramenta seguir um caminho isolado, Ayla organiza o contexto no GitHub colaborando para:</p>
+    <ul>
+      <li>Reduzir trabalho duplicado.</li>
+      <li>Evitar erros de versão e de contexto.</li>
+      <li>Minimizar falhas de comunicação entre IAs e ferramentas.</li>
+      <li>Inibir outros desvios comuns durante o desenvolvimento das aplicações.</li>
+    </ul>
+    <h2>Como ela conversa com as ferramentas</h2>
+    <p>Ayla não trabalha sozinha. Ela articula IAs e o ambiente local do desenvolvedor.</p>
+    <ul>
+      <li><strong>VS Code + Cline</strong> — para edição assistida no projeto. Parte dessa ponte ainda usa um handoff simples (copiar e colar o pedido estruturado).</li>
+      <li><strong>Terminal local</strong> — tarefas no computador podem ser disparadas automaticamente via ChatGPT, sem o desenvolvedor ter de repetir o comando à mão.</li>
+      <li><strong>GitHub</strong> — é o lugar onde o trabalho fica registrado, para todas as IAs verem o mesmo estado.</li>
+    </ul>
+    <h2>Backup e restauração</h2>
+    <p>Antes de apagar um repositório ou material autorizado para exclusão, Ayla cria um backup verificado no GitHub. Esse backup fica em quarentena por 7 dias. Se for pedido, ela é capaz de restaurar o que foi preservado. Se o backup falhar, a exclusão não segue.</p>
+    <p>Projeto pessoal de pesquisa e desenvolvimento, dirigido por Charlie_030183. O código interno permanece privado. Este site descreve apenas a ideia pública.</p>
+    <footer>
+      Contato: <a href="https://github.com/Charlie030183">github.com/Charlie030183</a><br>
+      Distribuição pública: <a href="https://github.com/Charlie030183/IA-Squad-Distribution">IA-Squad-Distribution</a>
+      <p class="legal">GitHub e o logo Invertocat são marcas da GitHub, Inc. Grok e ChatGPT são marcas de seus respectivos titulares. Ayla não é um produto do GitHub, da xAI ou da OpenAI e não é endossada por eles.</p>
+    </footer>
+  </main>
+</body>
+</html>
