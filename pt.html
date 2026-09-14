@@ -30,27 +30,84 @@
       padding: 32px 16px;
     }
     main {
-      position: relative;
       width: min(760px, 100%);
       background: var(--card);
       border: 1px solid var(--line);
       border-radius: 16px;
-      padding: 36px 32px 40px;
+      padding: 28px 32px 40px;
+    }
+    .hero {
+      display: grid;
+      grid-template-columns: 28px 1fr auto;
+      align-items: center;
+      gap: 12px;
+      min-height: 58px;
     }
     .lang-switch {
-      position: absolute;
-      top: 14px;
-      left: 14px;
       font-size: 18px;
       line-height: 1;
       text-decoration: none;
       opacity: .82;
+      justify-self: start;
     }
     .lang-switch:hover { opacity: 1; text-decoration: none; }
+    .brand {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+    .brand-line {
+      display: flex;
+      align-items: baseline;
+      justify-content: center;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+    h1 {
+      margin: 0;
+      font-size: clamp(2.2rem, 5vw, 3.1rem);
+      line-height: 1;
+      letter-spacing: -0.03em;
+    }
+    p.kicker {
+      margin: 0;
+      color: var(--accent);
+      font-size: 12px;
+      font-weight: 600;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+    }
+    p.meaning {
+      margin: 8px 0 28px;
+      text-align: center;
+      color: var(--muted);
+      font-size: 13px;
+      letter-spacing: .03em;
+      line-height: 1.4;
+    }
+    h2 {
+      margin: 24px 0 10px;
+      font-size: 1.1rem;
+    }
+    p {
+      margin: 0 0 16px;
+      color: var(--muted);
+      line-height: 1.6;
+      font-size: 1.05rem;
+    }
+    ul {
+      margin: 8px 0 16px;
+      padding-left: 20px;
+      color: var(--text);
+      line-height: 1.7;
+    }
+    a {
+      color: #58a6ff;
+      text-decoration: none;
+    }
+    a:hover { text-decoration: underline; }
     .gh-mark {
-      position: absolute;
-      top: 14px;
-      right: 14px;
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -77,62 +134,6 @@
       white-space: nowrap;
       color: var(--muted);
     }
-    .brand {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      text-align: center;
-      margin: 8px 96px 28px;
-    }
-    .brand-line {
-      display: flex;
-      align-items: baseline;
-      justify-content: center;
-      gap: 10px;
-      flex-wrap: wrap;
-    }
-    h1 {
-      margin: 0;
-      font-size: clamp(2.2rem, 5vw, 3.1rem);
-      line-height: 1;
-      letter-spacing: -0.03em;
-    }
-    p.kicker {
-      margin: 0;
-      color: var(--accent);
-      font-size: 12px;
-      font-weight: 600;
-      letter-spacing: .08em;
-      text-transform: uppercase;
-    }
-    p.meaning {
-      margin: 10px 0 0;
-      color: var(--muted);
-      font-size: 13px;
-      letter-spacing: .03em;
-      line-height: 1.4;
-    }
-    h2 {
-      margin: 24px 0 10px;
-      font-size: 1.1rem;
-    }
-    p {
-      margin: 0 0 16px;
-      color: var(--muted);
-      line-height: 1.6;
-      font-size: 1.05rem;
-    }
-    ul {
-      margin: 8px 0 24px;
-      padding-left: 20px;
-      color: var(--text);
-      line-height: 1.7;
-    }
-    a {
-      color: #58a6ff;
-      text-decoration: none;
-    }
-    a:hover { text-decoration: underline; }
     footer {
       margin-top: 8px;
       padding-top: 20px;
@@ -146,24 +147,28 @@
       color: #6e7681;
     }
     @media (max-width: 560px) {
-      .brand { margin: 44px 0 24px; }
+      .hero { grid-template-columns: 28px 1fr; }
+      .gh-mark { grid-column: 2; justify-self: end; }
+      .brand { grid-column: 1 / -1; }
     }
   </style>
 </head>
 <body>
   <main>
-    <a class="lang-switch" href="index.html" title="English" aria-label="Mudar para inglês">🇺🇸</a>
-    <a class="gh-mark" href="https://github.com/Charlie030183" aria-label="Funciona com GitHub">
-      <img src="assets/github-invertocat-white.svg" alt="GitHub" width="28" height="27">
-      <span>Funciona com GitHub</span>
-    </a>
-    <div class="brand">
-      <div class="brand-line">
-        <h1>Ayla</h1>
-        <p class="kicker">IA-Squad</p>
+    <div class="hero">
+      <a class="lang-switch" href="index.html" title="English" aria-label="Mudar para inglês">🇺🇸</a>
+      <div class="brand">
+        <div class="brand-line">
+          <h1>Ayla</h1>
+          <p class="kicker">IA-Squad</p>
+        </div>
       </div>
-      <p class="meaning">Autonomous Yielding Learning Assistant</p>
+      <a class="gh-mark" href="https://github.com/Charlie030183" aria-label="Funciona com GitHub">
+        <img src="assets/github-invertocat-white.svg" alt="GitHub" width="28" height="27">
+        <span>Funciona com GitHub</span>
+      </a>
     </div>
+    <p class="meaning">Autonomous Yielding Learning Assistant</p>
     <p>Ayla é a assistente operacional para suas IAs, ela cria um ambiente colaborativo entre elas e ferramentas diversas, incluindo Grok e ChatGPT, usando a API e os repositórios do GitHub como ponto comum de trabalho.</p>
     <p>O objetivo é simples: desenvolver com menos ruído. Em vez de cada agente ou ferramenta seguir um caminho isolado, Ayla organiza o contexto no GitHub colaborando para:</p>
     <ul>
@@ -172,6 +177,7 @@
       <li>Minimizar falhas de comunicação entre IAs e ferramentas.</li>
       <li>Inibir outros desvios comuns durante o desenvolvimento das aplicações.</li>
     </ul>
+    <p>Isso também ajuda em projetos pequenos, como criação de jogos e aplicativos multiplataforma.</p>
     <h2>Como ela conversa com as ferramentas</h2>
     <p>Ayla não trabalha sozinha. Ela articula IAs e o ambiente local do desenvolvedor.</p>
     <ul>
