@@ -30,6 +30,7 @@
       padding: 32px 16px;
     }
     main {
+      position: relative;
       width: min(760px, 100%);
       background: var(--card);
       border: 1px solid var(--line);
@@ -37,24 +38,31 @@
       padding: 28px 32px 40px;
     }
     .hero {
-      display: grid;
-      grid-template-columns: 28px 1fr auto;
-      align-items: center;
-      gap: 12px;
+      position: relative;
       min-height: 58px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
     }
     .lang-switch {
-      font-size: 18px;
-      line-height: 1;
+      position: absolute;
+      left: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      display: flex;
+      width: 22px;
+      height: 16px;
       text-decoration: none;
-      opacity: .82;
-      justify-self: start;
+      opacity: .92;
+    }
+    .lang-switch img {
+      width: 22px;
+      height: 16px;
+      display: block;
+      border-radius: 2px;
     }
     .lang-switch:hover { opacity: 1; text-decoration: none; }
     .brand {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
       text-align: center;
     }
     .brand-line {
@@ -108,6 +116,10 @@
     }
     a:hover { text-decoration: underline; }
     .gh-mark {
+      position: absolute;
+      right: 0;
+      top: 50%;
+      transform: translateY(-50%);
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -146,17 +158,14 @@
       font-size: 11px;
       color: #6e7681;
     }
-    @media (max-width: 560px) {
-      .hero { grid-template-columns: 28px 1fr; }
-      .gh-mark { grid-column: 2; justify-self: end; }
-      .brand { grid-column: 1 / -1; }
-    }
   </style>
 </head>
 <body>
   <main>
     <div class="hero">
-      <a class="lang-switch" href="pt.html" title="Português" aria-label="Switch to Portuguese">🇧🇷</a>
+      <a class="lang-switch" href="pt.html" title="Português" aria-label="Switch to Portuguese">
+        <img src="assets/flag-br.svg" alt="Português">
+      </a>
       <div class="brand">
         <div class="brand-line">
           <h1>Ayla</h1>
