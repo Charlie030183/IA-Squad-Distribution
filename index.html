@@ -35,7 +35,7 @@
       background: var(--card);
       border: 1px solid var(--line);
       border-radius: 16px;
-      padding: 28px 32px 40px;
+      padding: 28px 32px 48px;
     }
     .hero {
       position: relative;
@@ -47,9 +47,8 @@
     }
     .lang-switch {
       position: absolute;
-      left: 0;
-      top: 50%;
-      transform: translateY(-50%);
+      right: 16px;
+      bottom: 14px;
       display: flex;
       width: 22px;
       height: 16px;
@@ -124,6 +123,7 @@
     footer {
       margin-top: 8px;
       padding-top: 20px;
+      padding-right: 36px;
       border-top: 1px solid var(--line);
       color: var(--muted);
       font-size: 14px;
@@ -139,9 +139,6 @@
 <body>
   <main>
     <div class="hero">
-      <a class="lang-switch" href="pt.html" title="Português" aria-label="Switch to Portuguese">
-        <img src="assets/flag-br.svg" alt="Português">
-      </a>
       <svg class="lockup" viewBox="0 0 500 130" role="img" aria-label="Ayla IA-Squad — Autonomous Yielding Learning Assistant">
         <text x="138" y="64" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="56" font-weight="700" fill="#f3eee6">Ayla</text>
         <text x="268" y="64" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" font-size="16" font-weight="650" fill="#3fb950" letter-spacing="1.5">IA-SQUAD</text>
@@ -176,6 +173,9 @@
       Public distribution: <a href="https://github.com/Charlie030183/IA-Squad-Distribution">IA-Squad-Distribution</a>
       <p class="legal">GitHub and the Invertocat logo are trademarks of GitHub, Inc. Grok and ChatGPT are trademarks of their respective owners. Ayla is not a product of GitHub, xAI, or OpenAI and is not endorsed by them.</p>
     </footer>
+    <a class="lang-switch" href="pt.html" title="Português" aria-label="Switch to Portuguese">
+      <img src="assets/flag-br.svg" alt="Português">
+    </a>
   </main>
 </body>
 </html>
