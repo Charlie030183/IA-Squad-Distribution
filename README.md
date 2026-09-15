@@ -19,10 +19,21 @@ Push, merge, tag ou build em um projeto privado **não autorizam publicação au
 
 Código interno, documentação privada, Knowledge, Black Box, estados de IA, testes internos, credenciais e outros materiais não aprovados não pertencem a este repositório.
 
-## Nota — páginas de projeto (2026-09-15)
+## Página Ayla (canônica em Marketing) — 2026-09-15
 
-Charlie_030183 ordenou o repositório **[Marketing](https://github.com/Charlie030183/Marketing)** (PUBLIC) como host das páginas estilo Ayla.
+Charlie_030183 **autorizou** a remoção do conteúdo da página Ayla deste repositório, **com redirects** para o host canônico:
 
-- A página Ayla foi **copiada** para `Marketing/ayla/` (não movida/apagada aqui).
-- Este repositório permanece a distribuição pública de **artefatos estáveis aprovados**.
-- Remoção da página Ayla daqui: **somente após confirmação Charlie** (“move complete pending Charlie delete old”).
+| Old (Distribution Pages) | New (Marketing Pages) |
+|--------------------------|------------------------|
+| https://charlie030183.github.io/IASquad-Distribution/ | https://charlie030183.github.io/Marketing/ayla/ |
+| https://charlie030183.github.io/IASquad-Distribution/index.html | https://charlie030183.github.io/Marketing/ayla/ |
+| https://charlie030183.github.io/IASquad-Distribution/pt.html | https://charlie030183.github.io/Marketing/ayla/pt.html |
+
+- Canonical public Ayla page: **[Marketing/ayla](https://charlie030183.github.io/Marketing/ayla/)** (hub: https://charlie030183.github.io/Marketing/)
+- `index.html` / `pt.html` here are **redirect stubs** (meta refresh + JS + visible link). Repo **not** deleted.
+- `assets/` retained (unused by redirects; harmless; no releases/downloads broken).
+- Credit: Charlie_030183 · executed by Aysha.
+
+## Hub Marketing
+
+https://charlie030183.github.io/Marketing/
