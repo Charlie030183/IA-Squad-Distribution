@@ -1,6 +1,6 @@
-# IA-Squad Distribution
+# IA Squad Distribution
 
-Repositório público oficial para **distribuição de artefatos estáveis e explicitamente aprovados** dos projetos privados da IA-Squad.
+Repositório público oficial para **distribuição de artefatos estáveis e explicitamente aprovados** dos projetos privados da IA Squad.
 
 Este repositório **não é um repositório de desenvolvimento**.
 
